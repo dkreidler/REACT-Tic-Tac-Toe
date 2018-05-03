@@ -33,6 +33,11 @@ ul {
     width: 60px;
 }
 
+.winner {
+    background: yellow;
+    font-weight: bolder;
+}
+
 .square:focus {
     outline: none;
 }
