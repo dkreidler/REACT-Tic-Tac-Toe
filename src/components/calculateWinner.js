@@ -1,7 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-
 export function calculateWinner(squares) {
     const lines = [
       [0, 1, 2],
