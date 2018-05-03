@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {Square} from './square.js';
 
 export class Board extends React.Component {
