@@ -2,6 +2,7 @@ import React from 'react';
 
 import {Board} from './board.js';
 import {calculateWinner} from './calculateWinner.js';
+import {highlightWinner} from './highlightWinner.js';
 
 export class Game extends React.Component {
     constructor(props) {
@@ -40,7 +41,9 @@ export class Game extends React.Component {
       const history = this.state.history;
       const current = history[this.state.stepNumber];
       const winner = calculateWinner(current.squares);
-      
+      if highlightWinner(current.squares) == true {
+        squares.addClass('winner');
+      }
       const moves = history.map((step, move) => {
         const desc = move ?
           'Go to move #' + move :
